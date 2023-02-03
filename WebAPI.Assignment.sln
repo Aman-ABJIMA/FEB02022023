@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Assignment", "WebAPI.Assignment.csproj", "{24AE674E-FE6E-4898-B121-3AB4486592C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.Assignment", "WebAPI.Assignment.csproj", "{24AE674E-FE6E-4898-B121-3AB4486592C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student_Model", "..\Student_Model\Student_Model.csproj", "{1C5F2A7E-B75A-4535-9056-5161751CE060}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student_Model", "..\Student_Model\Student_Model.csproj", "{1C5F2A7E-B75A-4535-9056-5161751CE060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student_Data", "..\Student_Data\Student_Data.csproj", "{7C3E9EEC-100C-4956-AB50-66A11F719734}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student_Data", "..\Student_Data\Student_Data.csproj", "{7C3E9EEC-100C-4956-AB50-66A11F719734}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student_Interface", "..\Student_Interface\Student_Interface.csproj", "{7AC1AEC6-E2C6-4BD6-B699-85AA84F926BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student_Interface", "..\Student_Interface\Student_Interface.csproj", "{7AC1AEC6-E2C6-4BD6-B699-85AA84F926BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repository\Repository.csproj", "{9DFD698E-5191-4BAB-BACD-7BE7533C8F3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{9DFD698E-5191-4BAB-BACD-7BE7533C8F3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_Model", "..\DTO_Model\DTO_Model.csproj", "{4C12D5A6-8E99-40FB-90FA-9186507BAD9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO_Model", "..\DTO_Model\DTO_Model.csproj", "{4C12D5A6-8E99-40FB-90FA-9186507BAD9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "..\Helper\Helper.csproj", "{E1085A6E-E514-46EC-9C5B-528F9AE0BC53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper", "..\Helper\Helper.csproj", "{E1085A6E-E514-46EC-9C5B-528F9AE0BC53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "..\Student_Services\Services.csproj", "{D6A798F4-2C6A-43CF-B6B4-8583F0E279EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student_IServices", "..\Student_IServices\Student_IServices.csproj", "{949EF704-7A3C-4C38-AB38-F68BF7BCEC91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{E1085A6E-E514-46EC-9C5B-528F9AE0BC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1085A6E-E514-46EC-9C5B-528F9AE0BC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1085A6E-E514-46EC-9C5B-528F9AE0BC53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A798F4-2C6A-43CF-B6B4-8583F0E279EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A798F4-2C6A-43CF-B6B4-8583F0E279EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A798F4-2C6A-43CF-B6B4-8583F0E279EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A798F4-2C6A-43CF-B6B4-8583F0E279EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{949EF704-7A3C-4C38-AB38-F68BF7BCEC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949EF704-7A3C-4C38-AB38-F68BF7BCEC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949EF704-7A3C-4C38-AB38-F68BF7BCEC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949EF704-7A3C-4C38-AB38-F68BF7BCEC91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

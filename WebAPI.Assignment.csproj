@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="IKVM" Version="8.4.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="1.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Scrutor" Version="4.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
@@ -20,6 +22,7 @@
     <ProjectReference Include="..\Student_Data\Student_Data.csproj" />
     <ProjectReference Include="..\Student_Interface\Student_Interface.csproj" />
     <ProjectReference Include="..\Student_Model\Student_Model.csproj" />
+    <ProjectReference Include="..\Student_Services\Services.csproj" />
   </ItemGroup>
 
 </Project>

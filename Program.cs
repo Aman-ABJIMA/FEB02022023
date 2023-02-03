@@ -1,7 +1,4 @@
-using Helper;
-using Microsoft.EntityFrameworkCore;
 using Repository;
-using Student_Data;
 using Student_Interface;
 
 namespace WebAPI.Assignment
@@ -15,17 +12,14 @@ namespace WebAPI.Assignment
             // Add services to the container.
 
             builder.Services.AddControllers();
-            builder.Services.AddDbContext<StudentDbContext>(
-                options =>
-                {
-                    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-                });
+            builder.Services.AddCustomDatabase(builder.Configuration);
             builder.Services.AddTransient<IStudentRepository, StudentRepository>();
-            builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
-
+            builder.Services.AddCustomMapper();
+            builder.Services.AddCustomAssimblies();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
 
             var app = builder.Build();
 
@@ -39,7 +33,6 @@ namespace WebAPI.Assignment
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
